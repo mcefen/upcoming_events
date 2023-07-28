@@ -1,4 +1,4 @@
-package com.f5Events.gametour.config;
+/* package com.f5Events.gametour.config;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,5 +50,5 @@ public class SecurityConfiguration {
 
         return new InMemoryUserDetailsManager(users);
     }
-}
+} */
 
