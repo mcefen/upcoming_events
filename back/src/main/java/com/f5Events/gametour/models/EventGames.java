@@ -28,11 +28,25 @@ public class EventGames {
     @Column(name = "description")
     private String description;
 
-     @Column(name = "image")
+    @Column(name = "image")
     private String image;
+    
+    @Column(name = "availability")
+    private String availability;
 
+    @ManyToOne
+    @JoinColumn(name = "id_game")
+/*     @Column(name = "id_game") */
+    private Games idgame;
 
-
+    @ManyToOne
+    @JoinColumn(name = "id_user")
+/*     @Column(name = "id_user") */
+    private User iduser;
+    
+    
+    
+    
     public Long getId() {
         return id;
     }
@@ -88,4 +102,30 @@ public class EventGames {
     public void setLimitparticipants(Number limitparticipants) {
         this.limitparticipants = limitparticipants;
     }
+
+       public String getAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(String availability) {
+        this.availability = availability;
+    }
+
+        public Games getIdgame() {
+        return idgame;
+    }
+
+    public void setIdgame(Games idgame) {
+        this.idgame = idgame;
+    }
+
+      public User getIduser() {
+        return iduser;
+    }
+
+    public void setIduser(User iduser) {
+        this.iduser = iduser;
+    }
+
+    
 }

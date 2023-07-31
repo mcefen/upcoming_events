@@ -1,6 +1,7 @@
 package com.f5Events.gametour.models;
 
 import java.sql.Date;
+import java.util.Set;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -23,7 +24,8 @@ public class User {
     @Column(name = "role")
     private String role;
 
-    
+    @OneToMany(mappedBy = "iduser")
+    Set<EventGames> eventgames;
     
     
     public Long getId() {
