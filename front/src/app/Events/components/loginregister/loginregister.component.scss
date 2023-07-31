@@ -1,11 +1,12 @@
 
+
 .container {
-  width: 110%;
-  max-width: 500px;
+  width: 90%;
+  max-width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Ajustar para centrar exactamente */
+  transform: translate(-50%, -50%);
   background-color: rgba(54, 65, 104, 0.8);
   opacity: 0.8;
   border-radius: 10px;
@@ -13,6 +14,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #fff;
 
+  @media (max-width: 576px) {
+    max-width: 50%;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
 .form-group {
@@ -34,6 +41,13 @@
     border: 1px solid #fff; 
     background-color: #fff; 
     color: #000; 
+
+    @media (max-width: 576px) {
+     
+      padding: 5px;
+   
+     
+    }
   }
 
   .form-group.error-message {
@@ -53,6 +67,10 @@ button {
   border: none;
   cursor: pointer;
   margin-left: 8px;
+
+  @media (max-width: 576px) {
+    padding: 8px 16px;
+  }
 }
 
 .btn-primary {
@@ -64,12 +82,20 @@ button {
   background-color: #fff; 
   color: #000; 
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
+
  
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
+
+
