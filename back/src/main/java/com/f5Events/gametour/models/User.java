@@ -18,7 +18,7 @@ public class User {
     private String name;
 
     @Column(name = "password1")
-   /*  @DateTimeFormat(pattern = "dd/MM/yyyy")  */
+ 
     private String password1;
 
     @Column(name = "role")

@@ -17,7 +17,7 @@ public class Games {
     private String name;
 
     @Column(name = "publicationdate")
-   /*  @DateTimeFormat(pattern = "dd/MM/yyyy")  */
+   
     private Date publicationdate;
 
     @Column(name = "genre")

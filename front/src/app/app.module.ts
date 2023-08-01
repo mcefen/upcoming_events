@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     LoginregisterComponent,
     FooterComponent,
+    PageregisterComponent,
 
   
   ],
