@@ -2,6 +2,7 @@
 **/node_modules/
 !/back
 !/front
+**/.angular
 # Compiled output
 /dist
 /tmp
