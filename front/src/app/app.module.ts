@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CombinedPageComponent } from './Events/components/combined-page/combined-page.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginregisterComponent,
     FooterComponent,
-    CombinedPageComponent,
+
   
   ],
   imports: [
