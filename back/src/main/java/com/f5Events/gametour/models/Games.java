@@ -1,10 +1,6 @@
 package com.f5Events.gametour.models;
 
-import java.sql.Date;
 import java.util.Set;
-
-import org.springframework.format.annotation.DateTimeFormat;
-
 import jakarta.persistence.*;
 
 @Entity
