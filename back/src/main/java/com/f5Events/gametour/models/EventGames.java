@@ -16,7 +16,7 @@ public class EventGames {
     private String title;
 
     @Column(name = "publicationevent")
-   /*  @DateTimeFormat(pattern = "dd/MM/yyyy")  */
+
     private Date publicationevent;
 
     @Column(name = "participants")
@@ -36,12 +36,12 @@ public class EventGames {
 
     @ManyToOne
     @JoinColumn(name = "id_game")
-/*     @Column(name = "id_game") */
+
     private Games idgame;
 
     @ManyToOne
     @JoinColumn(name = "id_user")
-/*     @Column(name = "id_user") */
+
     private User iduser;
     
     
