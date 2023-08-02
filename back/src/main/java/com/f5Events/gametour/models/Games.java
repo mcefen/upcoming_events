@@ -16,19 +16,6 @@ public class Games {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "publicationdate")
-   /*  @DateTimeFormat(pattern = "dd/MM/yyyy")  */
-    private Date publicationdate;
-
-    @Column(name = "genre")
-    private String genre;
- 
-    @Column(name = "description")
-    private String description;
-
-    @Column(name = "outstanding")
-    private String outstanding;
-
     @Column(name = "abbreviation")
     private String abbreviation;
     
@@ -55,39 +42,7 @@ public class Games {
         this.name = name;
     }
 
-    public Date getPublicationdate() {
-        return publicationdate;
-    }
-
-    public void setPublicationdate(Date publicationdate) {
-        this.publicationdate = publicationdate;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-       public String getOutstanding() {
-        return outstanding;
-    }
-
-    public void setOutstanding(String outstanding) {
-        this.outstanding = outstanding;
-    }
-    
-       public String getAbbreviation() {
+    public String getAbbreviation() {
         return abbreviation;
     }
 

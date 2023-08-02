@@ -34,6 +34,7 @@ public class EventGamesService {
        neweventgames.setTitle(eventgames1.getTitle());
        neweventgames.setPublicationevent(eventgames1.getPublicationevent());
        neweventgames.setParticipants(eventgames1.getParticipants());
+       neweventgames.setLimitparticipants(eventgames1.getLimitparticipants());
        neweventgames.setDescription(eventgames1.getDescription());
        neweventgames.setImage(eventgames1.getImage());
        return repository.save(neweventgames);

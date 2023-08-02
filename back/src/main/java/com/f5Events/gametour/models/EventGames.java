@@ -30,9 +30,6 @@ public class EventGames {
 
     @Column(name = "image")
     private String image;
-    
-    @Column(name = "availability")
-    private String availability;
 
     @ManyToOne
     @JoinColumn(name = "id_game")
@@ -103,15 +100,7 @@ public class EventGames {
         this.limitparticipants = limitparticipants;
     }
 
-       public String getAvailability() {
-        return availability;
-    }
-
-    public void setAvailability(String availability) {
-        this.availability = availability;
-    }
-
-        public Games getIdgame() {
+    public Games getIdgame() {
         return idgame;
     }
 
