@@ -11,41 +11,42 @@
         
         
         <div class="form-group mb-3 fs-4  d-flex flex-column align-items-center">
-            <label class="mb-3 text-light px-3 ">Game</label>
+            <label class="mb-3 text-light px-3 text-center ">Game</label>
             <select class="form-control border border-success  w-50" name="Game">
+                <option *ngFor="let game of games" [value]="game.id_game">{{ game.name }}</option>
             </select>
         </div>
+        
         <div class="form-group mb-3 fs-4 d-flex flex-column align-items-center">
-            <label class="mb-3 text-light px-3  ">Date of tournament</label>
-            <input class="form-control border border border-success w-45" type="date" name="date">
+            <label class="mb-3 text-light px-3 text-center ">Date of tournament</label>
+            <input class="form-control border border border-success w-50" type="date" name="date">
         </div>
         
         <div class="form-group mb-3 d-flex flex-column align-items-center">
-            <label class=" mb-3 text-light fs-4 px-3 ">participants</label>
-        <input class="form-control border-success w-35 " type="number" name="participants">
+            <label class=" mb-3 text-light fs-4 px-3  text-center ">Limit of participants</label>
+        <input class="form-control border-success w-50 " type="number" name="limitparticipants">
         </div>
-       
-        <div class="form-group mb-3 fs-4" d-flex flex-column >
+        <div class="form-group d-flex flex-column align-items-center">
+            <label class="mb-3 text-light fs-4 px-3 text-center">Description</label>
+            <textarea class="form-control border-success w-100" name="description" rows="5"></textarea>
+        </div>
+        <div class="form-group  fs-4  d-flex flex-column">
             <label class="mb-3 text-light px-3">Image</label>
+            <input type="file"  id="image" (change)="onFileSelected($event)" style="display: none;">
             <br>
-            <button type="button" class="btn btn-success btn-lg py-1 px-3 fs-1 fw-bold border border-success" onclick="document.getElementById('image').click()">
-                +
-            </button>
-            <input type="file" class="custom-file-input border border-success" id="image" style="display: none;" (change)="onFileSelected($event)">
+           
+            <label for="image" style="cursor: pointer;">
+              
+            </label>
+            <img #selectedImage  class="border border-success w-100 h-50" 
+            [src]="getObjectURL(image) || '../../../assets/img/formDefaultImage.png'" (click)="onFileImageClick()">
+          
         </div>
-        <div class="image-container d-flex flex-column  fs-4">
-            <div *ngIf="image; else defaultImage">
-                <img #selectedImage class="selected-image  img-fluid border border-success w-100 h-100" [src]="getObjectURL(image)">
-
-            </div>
-            <ng-template #defaultImage>
-                <img class="selected-image mb-3 img-fluid border border-success w-100 h-100" src="../../../assets/img/formDefaultImage.png">
-            </ng-template>
-        </div>
+          
         <br>
         <div class="row ">
             <div class="col-5">
-                <button class="btn btn-3d cancel  btn-lg fs-2 px-3 shadow mx-4 shadow" type="button" (click)="return()" >Cancel</button>
+                <button class="btn btn-3d cancel  btn-lg fs-2 px-3 shadow mx-4 shadow" type="button" (click)="returnBack()" >Cancel</button>
             </div>
                 <div class="col-6  d-flex justify-content-end">
                 <button class="btn btn-3d save btn-lg fs-2 px-3 shadow mx-4 shadow" type="submit" (click)="submitForm()">Save</button>
