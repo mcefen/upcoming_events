@@ -18,6 +18,7 @@ public class EventGames {
 
     @Column(name = "publicationevent")
 
+
     private Date publicationevent;
 
     @Column(name = "participants")
