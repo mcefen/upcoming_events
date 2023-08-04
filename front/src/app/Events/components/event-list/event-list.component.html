@@ -1,10 +1,14 @@
-<div *ngFor="let event of events">
-    <div class="event-card">
-      <h2>{{ event.title }}</h2>
-      <p>{{ event.description }}</p>
-      <p>Availability: {{ event.availability === 'yes' ? 'Open' : 'Closed' }}</p>
-      <p>Limit Participants: {{ event.limitparticipants }}</p>
-      <p>Publication Date: {{ event.publicationevent }}</p>
+<div class="container">
+  <h2>Upcoming Events</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let event of events">
+      <div class="card-header">
+        <h3>{{ event.title }}</h3>
+      </div>
+      <div class="card-body">
+        <p>{{ event.description }}</p>
+        <p>Publication Date: {{ event.publicationevent | date }}</p>
+      </div>
     </div>
   </div>
-  
+</div>

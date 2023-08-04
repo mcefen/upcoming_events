@@ -7,22 +7,22 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./event-list.component.scss']
 })
 export class EventListComponent implements OnInit {
-  events: any[] = [];
 
-  constructor(private http: HttpClient) { }
+  events: any[] = [
+ 
+  
+  ];
+
+  constructor() { }
 
   ngOnInit(): void {
-    this.fetchEvents();
+    this.filterUpcomingEvents();
   }
 
-  fetchEvents(): void {
-    this.http.get<any[]>('http://localhost:8000/eventgames').subscribe(
-      (data) => {
-        this.events = data;
-      },
-      (error) => {
-        console.error('Error fetching events:', error);
-      }
-    );
+  filterUpcomingEvents(): void {
+    const currentDate = new Date().getTime();
+
+    this.events = this.events.filter(event => event.publicationevent > currentDate);
   }
+
 }
