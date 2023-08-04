@@ -2,7 +2,10 @@ package com.f5Events.gametour.models;
 
 import java.sql.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.*;
+
 
 @Entity
 @Table(name = "eventgames")
@@ -18,10 +21,10 @@ public class EventGames {
     private Date publicationevent;
 
     @Column(name = "participants")
-    private Number participants;
+    private Integer participants;
 
     @Column(name = "limitparticipants")
-    private Number limitparticipants;
+    private Integer limitparticipants;
  
     @Column(name = "description")
     private String description;
@@ -29,15 +32,17 @@ public class EventGames {
     @Column(name = "image")
     private String image;
 
-    @ManyToOne
-    @JoinColumn(name = "id_game")
+     @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "id_game", unique=false, nullable=true, insertable=true, updatable=true)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 
-    private Games idgame;
+     private Games idgame; 
 
-    @ManyToOne
-    @JoinColumn(name = "id_user")
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "id_user", unique=false, nullable=true, insertable=true, updatable=true)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 
-    private User iduser;
+    private User iduser;  
     
     
     
@@ -66,11 +71,11 @@ public class EventGames {
         this.publicationevent = publicationevent;
     }
 
-    public Number getParticipants() {
+    public Integer getParticipants() {
         return participants;
     }
 
-    public void setParticipants(Number participants) {
+    public void setParticipants(Integer participants) {
         this.participants = participants;
     }
 
@@ -90,17 +95,17 @@ public class EventGames {
         this.image = image;
     }
 
-      public Number getLimitparticipants() {
+      public Integer getLimitparticipants() {
         return limitparticipants;
     }
 
-    public void setLimitparticipants(Number limitparticipants) {
+    public void setLimitparticipants(Integer limitparticipants) {
         this.limitparticipants = limitparticipants;
     }
-
-    public Games getIdgame() {
+ 
+     public Games getIdgame() {
         return idgame;
-    }
+    } 
 
     public void setIdgame(Games idgame) {
         this.idgame = idgame;
@@ -112,7 +117,7 @@ public class EventGames {
 
     public void setIduser(User iduser) {
         this.iduser = iduser;
-    }
-
+    } 
+ 
     
 }

@@ -16,7 +16,7 @@ public class Games {
     private String abbreviation;
     
     @OneToMany(mappedBy = "idgame")
-    Set <EventGames> eventgames;
+    Set <EventGames> eventgames;  
     
  
 

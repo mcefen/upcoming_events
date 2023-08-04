@@ -21,7 +21,7 @@ public class User {
     private String role;
 
     @OneToMany(mappedBy = "iduser")
-    Set<EventGames> eventgames;
+    Set<EventGames> eventgames;  
     
     
     public Long getId() {
