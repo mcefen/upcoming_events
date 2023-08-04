@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="logo text-center mb-4">
+        <img class="img" src="../../../../assets/Logo.png" alt="logo" />
+      </div>
+
+      <form (ngSubmit)="register()">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group obligatory">
+             
+              <input type="text" class="form-control" name="name" id="form__name" placeholder="Enter your name" [(ngModel)]="name" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group obligatory">
+            
+              <input type="text" class="form-control" name="surname" id="form__surname" placeholder="Enter your surname" [(ngModel)]="surname" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group obligatory">
+              <input type="text" class="form-control" name="username" id="form__username" placeholder="Choose a username" [(ngModel)]="username" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group obligatory">
+              
+              <input type="email" class="form-control" name="email" id="form__email" placeholder="Enter your email" [(ngModel)]="email" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group obligatory">
+             
+              <input type="password" class="form-control" name="password" id="form__password" placeholder="Enter your password" [(ngModel)]="password" required>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group obligatory">
+              
+              <input type="password" class="form-control" name="confirm-password" id="form__confirm-password" placeholder="Confirm your password" [(ngModel)]="confirmPassword" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="obligatoryinputs text-center mb-4">
+          <p>All inputs are obligatory *</p>
+        </div>
+
+        <div class="form-group error-message" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </div>
+        <div class="form-group text-center btn-group-centered">
+          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="button" class="btn btn-secondary">Back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
