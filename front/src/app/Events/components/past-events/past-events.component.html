@@ -1,0 +1,10 @@
+<h2>Eventos Pasados</h2>
+<div *ngFor="let event of events">
+  <div class="event-card">
+    <h2>{{ event.title }}</h2>
+    <p>{{ event.description }}</p>
+    <p>Availability: {{ event.availability === 'no' ? 'Open' : 'Closed' }}</p>
+    <p>Limit Participants: {{ event.limitparticipants }}</p>
+    <p>Publication Date: {{ event.publicationevent }}</p>
+  </div>
+</div>

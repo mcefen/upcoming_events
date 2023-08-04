@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { pasteventsComponent } from './Events/components/past-events/past-events.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    pasteventsComponent
   ],
   imports: [
     BrowserModule,
