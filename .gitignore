@@ -16,6 +16,7 @@ npm-debug.log
 yarn-error.log
 /front/.angular
 
+
 # IDEs and editors
 .idea/
 .project
