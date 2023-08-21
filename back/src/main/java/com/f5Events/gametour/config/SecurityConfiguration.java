@@ -29,8 +29,8 @@ public class SecurityConfiguration {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
-    @Bean
+ */
+/*     @Bean
     public InMemoryUserDetailsManager userDetailsManager(){
         UserDetails pablo = User.builder()
         .username("Pablo")
@@ -49,6 +49,6 @@ public class SecurityConfiguration {
         users.add(pablo2);
 
         return new InMemoryUserDetailsManager(users);
-    }
-} */
+    } */
+/* }  */
 

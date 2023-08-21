@@ -32,9 +32,7 @@ public class GamesService {
     public Games update(Long id, Games game1, Games newGame){
          game1 = repository.findById(id).orElseThrow();
         newGame.setName(game1.getName());
-        newGame.setPublicationdate(game1.getPublicationdate());
-        newGame.setGenre(game1.getGenre());
-        newGame.setDescription(game1.getDescription());
+        newGame.setAbbreviation(game1.getAbbreviation());
         return repository.save(newGame);
     }
     
