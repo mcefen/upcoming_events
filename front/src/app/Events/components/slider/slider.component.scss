@@ -1,0 +1,41 @@
+// * {
+//     box-sizing: border-box
+// }
+
+.image-slideshow {
+    display: flex;
+    width: 153.60vh;
+    height: 46.08vh;
+    position: relative;
+    margin: auto;
+    // object-fit: cover;
+    overflow: hidden;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.image-fade {
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    max-height: 100px;
+    
+    // object-fit: cover;
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
