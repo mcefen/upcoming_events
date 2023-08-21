@@ -2,9 +2,10 @@ package com.f5Events.gametour.models;
 
 import java.sql.Date;
 
-import org.springframework.format.annotation.DateTimeFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.*;
+
 
 @Entity
 @Table(name = "eventgames")
@@ -16,33 +17,33 @@ public class EventGames {
     private String title;
 
     @Column(name = "publicationevent")
-   /*  @DateTimeFormat(pattern = "dd/MM/yyyy")  */
+
+
     private Date publicationevent;
 
     @Column(name = "participants")
-    private Number participants;
+    private Integer participants;
 
     @Column(name = "limitparticipants")
-    private Number limitparticipants;
+    private Integer limitparticipants;
  
     @Column(name = "description")
     private String description;
 
     @Column(name = "image")
     private String image;
-    
-    @Column(name = "availability")
-    private String availability;
 
-    @ManyToOne
-    @JoinColumn(name = "id_game")
-/*     @Column(name = "id_game") */
-    private Games idgame;
+     @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "id_game", unique=false, nullable=true, insertable=true, updatable=true)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 
-    @ManyToOne
-    @JoinColumn(name = "id_user")
-/*     @Column(name = "id_user") */
-    private User iduser;
+     private Games idgame; 
+
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "id_user", unique=false, nullable=true, insertable=true, updatable=true)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+
+    private User iduser;  
     
     
     
@@ -71,11 +72,11 @@ public class EventGames {
         this.publicationevent = publicationevent;
     }
 
-    public Number getParticipants() {
+    public Integer getParticipants() {
         return participants;
     }
 
-    public void setParticipants(Number participants) {
+    public void setParticipants(Integer participants) {
         this.participants = participants;
     }
 
@@ -95,25 +96,17 @@ public class EventGames {
         this.image = image;
     }
 
-      public Number getLimitparticipants() {
+      public Integer getLimitparticipants() {
         return limitparticipants;
     }
 
-    public void setLimitparticipants(Number limitparticipants) {
+    public void setLimitparticipants(Integer limitparticipants) {
         this.limitparticipants = limitparticipants;
     }
-
-       public String getAvailability() {
-        return availability;
-    }
-
-    public void setAvailability(String availability) {
-        this.availability = availability;
-    }
-
-        public Games getIdgame() {
+ 
+     public Games getIdgame() {
         return idgame;
-    }
+    } 
 
     public void setIdgame(Games idgame) {
         this.idgame = idgame;
@@ -125,7 +118,7 @@ public class EventGames {
 
     public void setIduser(User iduser) {
         this.iduser = iduser;
-    }
-
+    } 
+ 
     
 }

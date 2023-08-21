@@ -1,19 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateEventComponent } from './Admin/create-event/create-event.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './Events/views/home/home.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
+import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    LoginregisterComponent,
+    FooterComponent,
+    PageregisterComponent,
     CreateEventComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    FormsModule,
+    HttpClientModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,6 @@
 package com.f5Events.gametour.models;
 
-import java.sql.Date;
 import java.util.Set;
-
-import org.springframework.format.annotation.DateTimeFormat;
-
 import jakarta.persistence.*;
 
 
@@ -18,14 +14,14 @@ public class User {
     private String name;
 
     @Column(name = "password1")
-   /*  @DateTimeFormat(pattern = "dd/MM/yyyy")  */
+ 
     private String password1;
 
     @Column(name = "role")
     private String role;
 
     @OneToMany(mappedBy = "iduser")
-    Set<EventGames> eventgames;
+    Set<EventGames> eventgames;  
     
     
     public Long getId() {
