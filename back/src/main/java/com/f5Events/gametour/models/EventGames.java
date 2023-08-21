@@ -3,6 +3,8 @@ package com.f5Events.gametour.models;
 import java.sql.Date;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+
+
 @Entity
 @Table(name = "eventgames")
 public class EventGames {
@@ -11,11 +13,17 @@ public class EventGames {
     @Column(name = "title")
     private String title;
     @Column(name = "publicationevent")
+
+
     private Date publicationevent;
     @Column(name = "participants")
     private Integer participants;
+
+
     @Column(name = "limitparticipants")
     private Integer limitparticipants;
+    
+ 
     @Column(name = "description")
     private String description;
     @Column(name = "image")
@@ -28,6 +36,8 @@ public class EventGames {
     @JoinColumn(name = "id_user", unique=false, nullable=true, insertable=true, updatable=true)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private User iduser;
+
+    
     public Long getId() {
         return id;
     }
@@ -46,9 +56,13 @@ public class EventGames {
     public void setPublicationevent(Date publicationevent) {
         this.publicationevent = publicationevent;
     }
+   
+
     public Integer getParticipants() {
         return participants;
     }
+    
+
     public void setParticipants(Integer participants) {
         this.participants = participants;
     }
@@ -68,11 +82,16 @@ public class EventGames {
         return limitparticipants;
     }
     public void setLimitparticipants(Integer limitparticipants) {
+
         this.limitparticipants = limitparticipants;
     }
+    
+ 
      public Games getIdgame() {
         return idgame;
     }
+    
+
     public void setIdgame(Games idgame) {
         this.idgame = idgame;
     }
@@ -82,4 +101,7 @@ public class EventGames {
     public void setIduser(User iduser) {
         this.iduser = iduser;
     }
-}
+    } 
+ 
+    
+
