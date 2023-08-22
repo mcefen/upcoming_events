@@ -1,6 +1,9 @@
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { GamesService } from 'src/app/Events/services/Games.service';
+import { EventgamesService } from 'src/app/Events/services/Eventgames.service';
 import { Game } from 'src/app/Events/models/Games.model';
+import { Eventgame } from 'src/app/Events/models/Eventgames.model';
+
 @Component({
   selector: 'app-create-event',
   templateUrl: './create-event.component.html',
@@ -8,10 +11,17 @@ import { Game } from 'src/app/Events/models/Games.model';
 })
 export class CreateEventComponent implements OnInit {
   games: Game[] = [];
+  selectedGame: Game | undefined; 
+  eventName: string = ''; 
+  eventDescription: string = ''; 
   image: File | null = null;
   @ViewChild('imageInput') imageInputRef!: ElementRef;
 
-  constructor(private gamesService: GamesService) { }
+  constructor(
+    private gamesService: GamesService,
+    private eventGamesService: EventgamesService
+  ) {}
+
 
   ngOnInit(): void {
     this.loadGames();
@@ -59,13 +69,28 @@ export class CreateEventComponent implements OnInit {
         return Promise.reject(error);
       });
   }
-
   returnBack() {
-   
   }
-
   submitForm() {
-   
-  }
+    const newEventGame: Eventgame = {
+      id_eventgame: 0,
+      title: this.eventName,
+      publicationevent: new Date(),
+      participants: 0,
+      limitparticipants: 0,
+      description: this.eventDescription,
+      image: '', 
+      id_game: this.selectedGame as Game,
+      id_user: null
+    };
 
+    this.eventGamesService.createEventGame(newEventGame).subscribe(
+      (createdEventGame: Eventgame) => {
+        console.log('Event game created:', createdEventGame);
+      },
+      (error) => {
+        console.error('Error creating event game:', error);
+      }
+    );
+  }
 }

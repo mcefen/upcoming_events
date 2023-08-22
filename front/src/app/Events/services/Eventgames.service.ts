@@ -8,10 +8,11 @@ import { Eventgame } from '../models/Eventgames.model';
 })
 export class EventgamesService {
   private baseUrl = 'http://localhost:8080'
-  constructor(private http:HttpClient) {  }
-  
-  create(Eventgame:object):Observable<object>{
-    return this.http.post( this.baseUrl+'Eventgames/' ,Eventgame);
+
+  constructor(private http: HttpClient) { }
+
+  createEventGame(eventGame: Eventgame): Observable<Eventgame> {
+    return this.http.post<Eventgame>(`${this.baseUrl}/create-event-game`, eventGame); 
   }
 
 }

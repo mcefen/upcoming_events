@@ -6,8 +6,8 @@
         
         <div class="form-group mb-3 fs-4 d-flex flex-column align-items-center">
             <label class="mb-3 text-light fs-4 px-3 text-center">Event name</label>
-            <input class="form-control border-success w-75" type="text" name="eventName">
-        </div>
+            <input class="form-control border-success w-75" type="text" [(ngModel)]="eventName" name="eventName">
+          </div>
         
         
         <div class="form-group mb-3 fs-4  d-flex flex-column align-items-center">
@@ -28,8 +28,8 @@
         </div>
         <div class="form-group d-flex flex-column align-items-center">
             <label class="mb-3 text-light fs-4 px-3 text-center">Description</label>
-            <textarea class="form-control border-success w-100" name="description" rows="5"></textarea>
-        </div>
+            <textarea class="form-control border-success w-100" [(ngModel)]="eventDescription" name="description" rows="5"></textarea>
+          </div>
         <div class="form-group  fs-4  d-flex flex-column">
             <label class="mb-3 text-light px-3">Image</label>
             <input type="file"  id="image" (change)="onFileSelected($event)" style="display: none;">

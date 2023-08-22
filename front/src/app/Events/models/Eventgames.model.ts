@@ -8,6 +8,6 @@ export interface Eventgame{
     participants:Number,
     publicationevent:Date,
     title:String,
-    id_game:User,
-    id_user:Game
+    id_game:Game,
+    id_user:User| null | '';
 }
