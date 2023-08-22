@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.f5Events.gametour.models.User;
+import com.f5Events.gametour.models.User1;
 import com.f5Events.gametour.repositories.userrepository;
 
 @Service
@@ -20,17 +20,17 @@ public class UserService {
         this.repository = repository;
     }
 
-       public User create(User user){
-        User userSaved = repository.save(user);
+       public User1 create(User1 user){
+        User1 userSaved = repository.save(user);
         return userSaved;
     }
 
-    public User findById(Long id) {
-        User users =  repository.findById(id).orElseThrow();
+    public User1 findById(Long id) {
+        User1 users =  repository.findById(id).orElseThrow();
         return users;
     }
 
-    public User update(Long id, User user1, User newUser){
+    public User1 update(Long id, User1 user1, User1 newUser){
         user1 = repository.findById(id).orElseThrow();
         newUser.setName(user1.getName());
         newUser.setPassword(user1.getPassword());
@@ -38,14 +38,14 @@ public class UserService {
         return repository.save(newUser);
     }
     
-    public User delete(Long id, User user){
+    public User1 delete(Long id, User1 user){
         user = repository.findById(id).orElseThrow();
         repository.deleteById(user.getId());
         return user;
     }
     
-    public List<User> getAll() {
-        List<User> users = repository.findAll();
+    public List<User1> getAll() {
+        List<User1> users = repository.findAll();
         return users;
     }
 }

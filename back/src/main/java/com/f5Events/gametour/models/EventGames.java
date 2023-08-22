@@ -33,7 +33,7 @@ public class EventGames {
     @Column(name = "image")
     private String image;
 
-     @ManyToOne(fetch=FetchType.LAZY)
+    @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name = "id_game", unique=false, nullable=true, insertable=true, updatable=true)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 
@@ -43,7 +43,7 @@ public class EventGames {
     @JoinColumn(name = "id_user", unique=false, nullable=true, insertable=true, updatable=true)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 
-    private User iduser;  
+    private User1 iduser;  
     
     
     
@@ -112,11 +112,11 @@ public class EventGames {
         this.idgame = idgame;
     }
 
-      public User getIduser() {
+      public User1 getIduser() {
         return iduser;
     }
 
-    public void setIduser(User iduser) {
+    public void setIduser(User1 iduser) {
         this.iduser = iduser;
     } 
  
