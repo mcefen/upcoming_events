@@ -61,16 +61,4 @@ public class EventGamesController {
         return ResponseEntity.status(HttpStatus.OK).body(serviceGetAll);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
