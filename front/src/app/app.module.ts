@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
+import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { PageregisterComponent } from './Events/components/pageregister/pageregi
     LoginregisterComponent,
     FooterComponent,
     PageregisterComponent,
+    UpcomingEventsComponent,
 
   
   ],
