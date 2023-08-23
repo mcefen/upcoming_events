@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs/internal/Observable";
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +10,8 @@ export class EventService {
 
   constructor(private http: HttpClient) { }
 
-  getUpcomingEvents() {
-    this.http.get<any[]>('http://localhost:8000/eventgames')
-    .subscribe(listtournoment =>
-      {this.listournotment1 = listtournoment}
-      
-      )
+  getUpcomingEvents(): Observable<any[]> {
+  
+    return this.http.get<any[]>('http://localhost:8000/eventgames');
   }
 }
