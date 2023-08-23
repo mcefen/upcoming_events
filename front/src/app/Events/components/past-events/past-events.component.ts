@@ -1,28 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { EventService } from '../../../services/event.service';
 @Component({
   selector: 'app-past-events',
   templateUrl: './past-events.component.html',
   styleUrls: ['./past-events.component.scss']
 })
-export class pasteventsComponent implements OnInit {
-  events: any[] = [];
+export class PastEventsComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  pastEvents: any[] = [];
+
+  constructor(private eventService: EventService) { }
 
   ngOnInit(): void {
-    this.fetchEvents();
-  }
-
-  fetchEvents(): void {
-    this.http.get<any[]>('http://localhost:8000/eventgames').subscribe(
-      (data) => {
-        this.events = data;
-      },
-      (error) => {
-        console.error('Error fetching events:', error);
-      }
-    );
+    this.eventService.getUpcomingEvents().subscribe((events: any[]) => {
+      const currentDate = new Date();
+      this.pastEvents = events.filter(event => new Date(event.publicationevent) < currentDate);
+      this.pastEvents.sort((a, b) => new Date(b.publicationevent).getTime() - new Date(a.publicationevent).getTime());
+    });
   }
 }

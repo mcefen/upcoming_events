@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { pasteventsComponent } from './Events/components/past-events/past-events.component';
+import { PastEventsComponent } from './Events/components/past-events/past-events.component';
 import { HomeComponent } from './Events/views/home/home.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
@@ -15,7 +15,7 @@ import { UpcomingEventsComponent } from '../app/Events/components/upcoming-event
 @NgModule({
   declarations: [
     AppComponent,
-    pasteventsComponent,
+    PastEventsComponent,
     HomeComponent,
     LoginregisterComponent,
     FooterComponent,
