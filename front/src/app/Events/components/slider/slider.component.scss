@@ -1,41 +1,52 @@
-// * {
-//     box-sizing: border-box
-// }
-
 .image-slideshow {
     display: flex;
-    width: 153.60vh;
-    height: 46.08vh;
-    position: relative;
+    width: 76.493rem;
+    height: 15.054rem;
     margin: auto;
-    // object-fit: cover;
-    overflow: hidden;
-    
     justify-content: center;
     align-items: center;
+    background-color: #44F306;
+    border: 5px solid #000000;
+    outline: 5px solid #44F306;
+    margin-top: 3rem;
+    border-radius: 0.625rem;
+    
 }
 
 .image-fade {
-    width: auto;
-    height: auto;
-    max-width: 1000px;
-    max-height: 100px;
+    width: 15rem;
+    height: 13.438rem;
+    object-fit: fill;
+    border: 8px solid #000000;
+}
+
+.row {
+    justify-content: center;
+}
+
+.container-h1-1 {
+    background-color: #44F306;
+    border: 0.313rem solid #000000;
+    outline: 0.313rem solid #44F306;
+    height: 6rem;
+    width: 37.5rem;
+    margin-top: 3rem;
+    border-radius: 0.625rem;
+
+
+}
+
+
+.h1-1 {
     
-    // object-fit: cover;
-
+    vertical-align: center;
+    text-align: center;
+    -webkit-text-stroke: 0.125rem white;
+    padding: 0.5rem;
+    font-size: 3.21rem;
+    // font-family: sans-serif;
+    // font-weight:bold;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
-}
 
-@keyframes fade {
-    from {
-        opacity: .5
-    }
 
-    to {
-        opacity: 1
-    }
-}
