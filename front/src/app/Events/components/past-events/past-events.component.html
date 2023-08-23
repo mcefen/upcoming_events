@@ -1,0 +1,6 @@
+<div *ngFor="let event of pastEvents" class="past-event">
+  <h3>{{ event.title }}</h3>
+  <p>{{ event.idgame.name }}</p>
+  <p class="event-date">Fecha: {{ event.publicationevent | date:'medium' }}</p>
+  <hr>
+</div>
