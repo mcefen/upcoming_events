@@ -1,45 +1,22 @@
-/* Estilo para la lista de eventos */
-h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-block-end: 20px;
-    color: #ffcc00; /* Color amarillo */
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    background-color: #444444; /* Color de fondo gris oscuro */
-    border-radius: 10px;
-    padding: 20px;
-    margin-block-end: 20px;
-  }
-  
-  h3 {
-    font-size: 24px;
-    color: #00ff00; /* Color verde */
-    margin-block-end: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-    color: #ffffff; /* Color blanco */
-    margin: 5px 0;
-  }
-  
-  strong {
-    color: #ffcc00; /* Color amarillo */
-  }
-  
-  /* Estilo para el contenedor del componente */
-  :host {
-    display: block;
-    max-inline-size: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #222222; /* Color de fondo gris oscuro para el contenedor */
-  }
-  
+.past-event {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-block-end: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  block-size: 100px;
+}
+
+.past-event h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.past-event p {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.event-date {
+  font-weight: normal;
+}
