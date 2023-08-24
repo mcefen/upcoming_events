@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Archivo:wght@300;400;700&family=Hanken+Grotesk:wght@100&family=Noto+Serif&family=Poppins:wght@300;400;600&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background-image: url('/front/src/assets/images/image\ 3.png'); 
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial, sans-serif; 
+    font-family: 'Noto Serif', serif ; 
     display: flex;
     justify-content: center;
 /*     align-items: center; */
