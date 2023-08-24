@@ -1,5 +1,6 @@
-<div *ngFor="let event of upcomingEvents">
+<div *ngFor="let event of upcomingEvents" class="upcoming-event">
   <h3>{{ event.title }}</h3>
   <p>{{ event.idgame.name }}</p>
+  <p>Date: {{ event.publicationevent | date:'medium' }}</p>
   <hr>
 </div>
