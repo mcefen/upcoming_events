@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
+import { SliderComponent } from './Events/components/slider/slider.component';
 
 
 @NgModule({
@@ -22,7 +23,12 @@ import { UpcomingEventsComponent } from '../app/Events/components/upcoming-event
     FooterComponent,
     PageregisterComponent,
     UpcomingEventsComponent,
+
     CreateEventComponent,
+
+    SliderComponent,
+
+
   
   ],
   imports: [
