@@ -5,7 +5,10 @@
     margin-top: 20px;
     border-radius: 10px;
     text-align: center;
+    flex: 1;
+    margin: 22px 20px;
 }
+
 
 .h1-1{
 text-shadow: 2px 3px 0px #FFFFFF;
@@ -15,11 +18,13 @@ font-size: 15px;
 
 .container-slider{
     height: 98px;
-    border-radius: 10px;
-    border: 2px solid #44F306;
+     border-radius: 10px;
+     border: 2px solid #44F306;
     margin-top: 22px;
     margin-left: 20px;
     margin-right: 20px;
+    flex: 1;
+    margin: 22px 20px;
 }
 
 .container-next-tournaments{
@@ -49,5 +54,5 @@ font-size: 15px;
 .container-next-tournaments,
 .container-finished-tournaments {
     flex: 1;
-    margin: 22px 20px; /* Ajusta los márgenes según tus preferencias */
+    margin: 22px 20px;
 }
