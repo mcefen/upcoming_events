@@ -4,6 +4,7 @@
 **/.angular
 !/back
 !/front
+**/.angular
 # Compiled output
 /dist
 /tmp
