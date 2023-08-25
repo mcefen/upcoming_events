@@ -10,6 +10,8 @@ import { LoginregisterComponent } from './Events/components/loginregister/loginr
 import { HttpClientModule } from '@angular/common/http';
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { UpcomingEventsComponent } from '../app/Events/components/upcoming-event
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-   
+    BrowserAnimationsModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

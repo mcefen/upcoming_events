@@ -1,10 +1,16 @@
 <div class="container-flex">
   <div class="col-12 container-h1-2">
-      <h1 class="h1-1">Finished &nbsp;&nbsp;&nbsp;Tournaments</h1>
+      <h1 class="h1-2">Finished &nbsp;&nbsp;&nbsp;Tournaments</h1>
   </div>
 <div *ngFor="let event of pastEvents" class="past-event">
+  <div class="details-container">
   <h3>{{ event.title }}</h3>
-  <p>{{ event.idgame.name }}</p>
-  <p class="event-date">Fecha: {{ event.publicationevent | date:'medium' }}</p>
-  <hr>
+  <p class="event-details">{{ event.idgame.name }}</p>
+</div>
+ <div class="buttons-container">
+    <div class="date">{{ event.publicationevent | date:'medium' }}</div>
+    <div class="button-container">
+      <button class="button info-button">Info</button>
+    </div>
+  </div>
 </div>
