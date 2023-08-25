@@ -10,6 +10,7 @@ import { LoginregisterComponent } from './Events/components/loginregister/loginr
 import { HttpClientModule } from '@angular/common/http';
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
+import { SliderComponent } from './Events/components/slider/slider.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { UpcomingEventsComponent } from '../app/Events/components/upcoming-event
     FooterComponent,
     PageregisterComponent,
     UpcomingEventsComponent,
+    SliderComponent,
 
   
   ],
