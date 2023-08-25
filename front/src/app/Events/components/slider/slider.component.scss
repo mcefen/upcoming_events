@@ -1,0 +1,60 @@
+.banner {
+    display: grid;
+    width: 26.75rem;
+    height: 57.875rem;
+    background: #84927e;
+    justify-content: center;
+}
+
+
+.image-slideshow {
+    display: flex;
+    width: 25.375rem;
+    height: 6rem;
+    // margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #44F306;
+    border: 0.188rem solid #000000;
+    outline: 0.188rem solid #44F306;
+    margin-top: -24rem;
+    border-radius: 0.625rem;
+    
+}
+
+.image-fade {
+    width: 4.95rem;
+    height: 5.1rem;
+    object-fit:fill;
+    border: 0.125rem solid #000000;
+}
+
+.row {
+    justify-content: center;
+}
+
+.container-h1-1 {
+    background-color: #44F306;
+    border: 0.188rem solid #000000;
+    outline: 0.188rem solid #44F306;
+    width: 17rem;
+    height: 3rem;
+    margin-top: 5rem;
+    border-radius: 0.625rem;
+
+
+}
+
+
+.h1-1 {
+    text-shadow: -0.063rem -0.063rem 0.063rem #ffffff, 0.125rem 0.125rem  0.125rem  #ffffff, -0.063rem 0.063rem 0.063rem #ffffff, 0.063rem -0.063rem 0.063rem #ffffff;
+    vertical-align: center;
+    text-align: center;
+    
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    // font-weight: 900;
+}
+
+
+
