@@ -7,13 +7,17 @@
     text-align: center;
     flex: 1;
     margin: 22px 20px;
+    
 }
 
 
 .h1-1{
-text-shadow: 2px 3px 0px #FFFFFF;
-padding: 5px;
-font-size: 15px;
+    text-shadow: -0.063rem -0.063rem 0.063rem #ffffff, 0.125rem 0.125rem  0.125rem  #ffffff, -0.063rem 0.063rem 0.063rem #ffffff, 0.063rem -0.063rem 0.063rem #ffffff;
+    vertical-align: center;
+    text-align: center;
+    
+    padding: 0.5rem;
+    font-size: 2rem;
 
 }
 
@@ -43,6 +47,7 @@ font-size: 15px;
     margin-top: 20px;
     border-radius: 10px;
     text-align: center;
+    
 }
 
 .container-finished-tournaments{
