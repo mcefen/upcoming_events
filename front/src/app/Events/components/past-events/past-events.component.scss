@@ -4,6 +4,7 @@
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
 }
 
 .past-event h3 {
@@ -18,4 +19,12 @@
 
 .event-date {
   font-weight: normal; 
+}
+.container-h1-2{
+  background-color: #EE7301;
+  border: 0.188rem solid #000000;
+  outline: 0.188rem solid #EE7301;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
 }

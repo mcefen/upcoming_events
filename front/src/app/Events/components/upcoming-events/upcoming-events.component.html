@@ -1,6 +1,17 @@
+
+<div class="col-12 container-h1-1">
+  <h1 class="h1-1">Next &nbsp;&nbsp;&nbsp;Tournaments</h1>
+</div>
 <div *ngFor="let event of upcomingEvents" class="upcoming-event">
-  <h3>{{ event.title }}</h3>
-  <p>{{ event.idgame.name }}</p>
-  <p>Date: {{ event.publicationevent | date:'medium' }}</p>
-  <hr>
+  <div class="details-container">
+    <h3>{{ event.title }}</h3>
+    <p class="event-details">{{ event.idgame.name }}</p>
+  </div>
+  <div class="buttons-container">
+    <div class="date">{{ event.publicationevent | date:'medium' }}</div>
+    <div class="button-container">
+      <button class="button info-button">Info</button>
+      <button class="button login-button">Login</button>
+    </div>
+  </div>
 </div>

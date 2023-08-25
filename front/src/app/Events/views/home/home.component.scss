@@ -42,3 +42,12 @@ font-size: 15px;
     margin-left: 20px;
     margin-right: 20px;
 }
+.container-flex {
+    display: flex;
+}
+
+.container-next-tournaments,
+.container-finished-tournaments {
+    flex: 1;
+    margin: 22px 20px; /* Ajusta los márgenes según tus preferencias */
+}
