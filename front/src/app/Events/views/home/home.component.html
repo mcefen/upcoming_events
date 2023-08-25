@@ -1,21 +1,33 @@
-<div class="row">
-<div class="col-12 container-h1-1">
-    <h1 class="h1-1">Featured &nbsp;&nbsp;&nbsp;Tournaments</h1>
-</div>
-</div>
-<div class="container-slider"></div>
-<div class="col-12 container-h1-1">
-    <h1 class="h1-1">Next &nbsp;&nbsp;&nbsp;Tournaments</h1>
-</div>
-
-<div class="container-next-tournaments">
-    <app-upcoming-events></app-upcoming-events>
-</div>
-
-<div class="col-12 container-h1-2">
-    <h1 class="h1-1">Finished &nbsp;&nbsp;&nbsp;Tournaments</h1>
-</div>
-
-<div class="container-finished-tournaments">
-<app-past-events></app-past-events> 
-</div>
+<div class="container">
+    <div class="row">
+      <div class="col-12 container-h1-1">
+        <h1 class="h1-1">Featured &nbsp;&nbsp;&nbsp;Tournaments</h1>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12 container-slider">
+        <app-slider></app-slider>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container-next-tournaments">
+          <app-upcoming-events></app-upcoming-events>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="container-finished-tournaments">
+          <app-past-events></app-past-events>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+  

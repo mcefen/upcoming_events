@@ -12,6 +12,8 @@ import { LoginregisterComponent } from './Events/components/loginregister/loginr
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { SliderComponent } from './Events/components/slider/slider.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-   
+    BrowserAnimationsModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
