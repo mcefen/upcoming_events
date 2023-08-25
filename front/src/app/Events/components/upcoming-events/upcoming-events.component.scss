@@ -75,4 +75,24 @@
   margin-top: 7%; 
   border-radius: 10px; 
   text-align: center;
+  text-shadow: -0.063rem -0.063rem 0.063rem #ffffff, 0.125rem 0.125rem  0.125rem  #ffffff, -0.063rem 0.063rem 0.063rem #ffffff, 0.063rem -0.063rem 0.063rem #ffffff;
+  vertical-align: center;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 6px;
+}
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+
+  .page-item {
+    display: inline;
+    margin: 0 5px;
+
+    .page-link {
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
 }

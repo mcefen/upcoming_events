@@ -54,7 +54,7 @@
 
 
 .info-button {
-  background-color: #2ecc71;
+  background-color: #EE7301;
   border-radius: 10px;
   color: black ;
   border: none;
@@ -68,5 +68,26 @@
   margin-top: 7%; 
   border-radius: 10px; 
   text-align: center;
+  text-shadow: -0.063rem -0.063rem 0.063rem #ffffff, 0.125rem 0.125rem  0.125rem  #ffffff, -0.063rem 0.063rem 0.063rem #ffffff, 0.063rem -0.063rem 0.063rem #ffffff;
+    vertical-align: center;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
 
+}
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20%;
+
+  .page-item {
+    display: inline;
+    margin: 0 5px;
+
+    .page-link {
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
 }
