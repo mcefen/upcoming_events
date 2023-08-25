@@ -1,6 +1,4 @@
-form{
-    width:80%
-}
+
 .btn-3d {
     border: none;
     border-radius: 6px;
@@ -29,4 +27,21 @@ form{
 .btn-3d:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.image-container {
+    width: 100%; 
+    height: 150px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.object-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+img{
+    background-color:white
 }

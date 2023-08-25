@@ -7,7 +7,7 @@ import { Game } from '../models/Games.model';
   providedIn: 'root'
 })
 export class GamesService {
-  private baseUrl = 'http://localhost:8080'
+  private baseUrl = 'http://localhost:8000'
   constructor(private http:HttpClient) {  }
   
   

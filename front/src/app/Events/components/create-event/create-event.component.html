@@ -1,50 +1,55 @@
-<div class="d-flex justify-content-center form-container mt-5 ">
+<div class="d-flex justify-content-center form-container mt-2 ">
     <form>
         <div>
             <h1 class="d-flex justify-content-center text-light ">Create Tournament</h1>
         </div>
         
-        <div class="form-group mb-3 fs-4 d-flex flex-column align-items-center">
-            <label class="mb-3 text-light fs-4 px-3 text-center">Event name</label>
-            <input class="form-control border-success w-75" type="text" [(ngModel)]="eventName" name="eventName">
+        <div class="form-group mb-1 d-flex flex-column align-items-center">
+            <label class="mb-1 text-light px-3 text-center">Event name</label>
+            <input class="form-control border-success w-75" type="text"  name="eventName" [(ngModel)]="eventName" required>
           </div>
         
         
-        <div class="form-group mb-3 fs-4  d-flex flex-column align-items-center">
-            <label class="mb-3 text-light px-3 text-center ">Game</label>
-            <select class="form-control border border-success  w-50" name="Game">
+        <div class="form-group mb-1   d-flex flex-column align-items-center">
+            <label class="mb-1 text-light px-3 text-center ">Game</label>
+            <select class="form-control border border-success w-50" name="Game" [(ngModel)]="selectedGame" required>
                 <option *ngFor="let game of games" [value]="game.id_game">{{ game.name }}</option>
-            </select>
+            </select> 
+
         </div>
         
-        <div class="form-group mb-3 fs-4 d-flex flex-column align-items-center">
-            <label class="mb-3 text-light px-3 text-center ">Date of tournament</label>
-            <input class="form-control border border border-success w-50" type="date" name="date">
+        <div class="form-group mb-1 d-flex flex-column align-items-center">
+            <label class="mb-1 text-light px-3 text-center ">Date of tournament</label>
+            <input class="form-control border border border-success w-50" type="date" name="date" [(ngModel)]="eventDate" required>
         </div>
         
-        <div class="form-group mb-3 d-flex flex-column align-items-center">
-            <label class=" mb-3 text-light fs-4 px-3  text-center ">Limit of participants</label>
-        <input class="form-control border-success w-50 " type="number" name="limitparticipants">
+        <div class="form-group mb-1 d-flex flex-column align-items-center">
+            <label class=" mb-1 text-light px-3 text-center ">Limit of participants</label>
+            <input class="form-control border-success w-50" type="number" name="limitparticipants"
+                   [(ngModel)]="limitparticipants" min="0" inputmode="numeric" required>
         </div>
+        
+        
         <div class="form-group d-flex flex-column align-items-center">
-            <label class="mb-3 text-light fs-4 px-3 text-center">Description</label>
-            <textarea class="form-control border-success w-100" [(ngModel)]="eventDescription" name="description" rows="5"></textarea>
+            <label class="mb-1 text-light px-3 text-center">Description</label>
+            <textarea class="form-control border-success w-100" [(ngModel)]="eventDescription" name="description" rows="5" required></textarea>
           </div>
-        <div class="form-group  fs-4  d-flex flex-column">
-            <label class="mb-3 text-light px-3">Image</label>
-            <input type="file"  id="image" (change)="onFileSelected($event)" style="display: none;">
-            <br>
-           
-            <label for="image" style="cursor: pointer;">
-              
-            </label>
-            <img #selectedImage  class="border border-success w-100 h-50" 
-            [src]="getObjectURL(image) || '../../../assets/img/formDefaultImage.png'" (click)="onFileImageClick()">
-          
+
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="form-group  d-flex flex-column col-12 ">
+                <label class="mb-1 text-light px-3">Image</label>
+                <input type="file" #imageInput (change)="onFileSelected($event)" style="display: none;">
+                <br>
+            
+                <label for="image" style="cursor: pointer;"></label>
+        
+                <img #selectedImage class="border border-success  image-container" [src]="getObjectURL(image) || '../../../assets/img/formDefaultImage.png'" (click)="onFileImageClick()" >         
+            
+            </div>
         </div>
           
         <br>
-        <div class="row ">
+        <div class="row">
             <div class="col-5">
                 <button class="btn btn-3d cancel  btn-lg fs-2 px-3 shadow mx-4 shadow" type="button" (click)="returnBack()" >Cancel</button>
             </div>

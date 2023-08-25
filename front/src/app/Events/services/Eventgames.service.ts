@@ -7,12 +7,12 @@ import { Eventgame } from '../models/Eventgames.model';
   providedIn: 'root'
 })
 export class EventgamesService {
-  private baseUrl = 'http://localhost:8080'
+  private baseUrl = 'http://localhost:8000'
 
   constructor(private http: HttpClient) { }
 
   createEventGame(eventGame: Eventgame): Observable<Eventgame> {
-    return this.http.post<Eventgame>(`${this.baseUrl}/create-event-game`, eventGame); 
+    return this.http.post<Eventgame>(`${this.baseUrl}/eventgames`, eventGame); 
   }
 
 }

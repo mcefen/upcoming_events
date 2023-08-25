@@ -11,12 +11,14 @@ import { Eventgame } from 'src/app/Events/models/Eventgames.model';
 })
 export class CreateEventComponent implements OnInit {
   games: Game[] = [];
-  selectedGame: Game | undefined; 
+  selectedGame: number | undefined;
   eventName: string = ''; 
   eventDescription: string = ''; 
+  limitparticipants: number = 0;
   image: File | null = null;
   @ViewChild('imageInput') imageInputRef!: ElementRef;
-
+  @ViewChild('selectedImage') selectedImage!: ElementRef;
+  eventDate: string = '';
   constructor(
     private gamesService: GamesService,
     private eventGamesService: EventgamesService
@@ -33,11 +35,12 @@ export class CreateEventComponent implements OnInit {
     });
   }
   onFileImageClick(): void {
-    if (this.imageInputRef) {
-      const fileInput: HTMLElement = this.imageInputRef.nativeElement;
+    const fileInput: HTMLInputElement | null = this.imageInputRef.nativeElement;
+    if (fileInput) {
       fileInput.click();
     }
   }
+  
   formatDate(date: Date): string {
     const formattedDate = new Date(date).toISOString().split('T')[0];
     return formattedDate;
@@ -47,8 +50,11 @@ export class CreateEventComponent implements OnInit {
     const file: File | null = event.target.files[0];
     if (file) {
       this.image = file;
+      const selectedImageElement: HTMLImageElement = this.selectedImage.nativeElement;
+      selectedImageElement.src = this.getObjectURL(this.image);
     }
   }
+  
 
   getObjectURL(file: File | null): string {
     if (file) {
@@ -72,18 +78,21 @@ export class CreateEventComponent implements OnInit {
   returnBack() {
   }
   submitForm() {
+    
     const newEventGame: Eventgame = {
       id_eventgame: 0,
       title: this.eventName,
-      publicationevent: new Date(),
+      publicationevent: this.eventDate,
       participants: 0,
-      limitparticipants: 0,
+      limitparticipants: this.limitparticipants,
       description: this.eventDescription,
-      image: '', 
-      id_game: this.selectedGame as Game,
-      id_user: null
+      image: this.image ? this.image.name : '',
+      id_game: this.selectedGame as number,
+      id_user: ''
     };
-
+    
+    console.log("New event game data:", newEventGame);
+  
     this.eventGamesService.createEventGame(newEventGame).subscribe(
       (createdEventGame: Eventgame) => {
         console.log('Event game created:', createdEventGame);

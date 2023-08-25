@@ -6,8 +6,8 @@ export interface Eventgame{
     image:String,
     limitparticipants:Number,
     participants:Number,
-    publicationevent:Date,
+    publicationevent:String,
     title:String,
-    id_game:Game,
+    id_game:Number,
     id_user:User| null | '';
 }
