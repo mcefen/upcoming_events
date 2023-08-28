@@ -8,10 +8,9 @@ import { HomeComponent } from './Events/views/home/home.component';
 
 const routes: Routes = [
   
-  { path: '', component: AppComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginregisterComponent, },
-  { path: 'footer', component: FooterComponent },
   { path: 'register', component: PageregisterComponent },
 ];
 

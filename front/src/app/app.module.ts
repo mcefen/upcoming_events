@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     CreateEventComponent,
 
     SliderComponent,
+
 
 
   

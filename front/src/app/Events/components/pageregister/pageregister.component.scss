@@ -1,11 +1,10 @@
-
 .container {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  margin-left: 0;
+  margin-right:50vh ;
   background-color: rgba(54, 65, 104, 0.8);
   opacity: 0.8;
+  margin-top: 5vh;
 }
 
 .logo {
@@ -13,11 +12,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 
 .form-group {
@@ -33,9 +32,10 @@
   input[type="email"],
   input[type="password"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    font-size: 14px;
   }
 
   &.obligatory {
@@ -45,8 +45,8 @@
       content: "*";
       position: absolute;
       top: 0;
-      right: -10px;
-      font-size: 14px;
+      right: 0;
+      font-size: 0;
       color: red;
     }
   }
@@ -57,7 +57,7 @@
   margin-bottom: 20px;
   font-size: 12px;
   color: red;
- margin-top: -10%;
+  margin-top: -10%;
 }
 
 .error-message {
@@ -89,27 +89,12 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
 
-  .btn:not(:last-child) {
-    margin-right: 10px;
-  }
+.btn:not(:last-child) {
+  margin-right: 10px;
 }
-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 20px; 
-  .form-group {
-    display: flex;
-    align-items: center;
-    label {
-      flex: 0 0 100px; 
-      margin-right: 10px; 
-    }
-    input {
-      flex: 1;
-    }
-  }
-}
+
 .btn-group-centered {
   display: flex;
   justify-content: center;
@@ -124,5 +109,25 @@ form {
   text-align: center;
   font-size: 12px;
   color: red;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .col-md-8,
+  .col-lg-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .obligatory {
+    position: relative;
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+
+
+
+
