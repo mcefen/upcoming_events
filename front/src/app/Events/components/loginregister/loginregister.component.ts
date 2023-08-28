@@ -27,7 +27,7 @@ export class LoginregisterComponent {
       const foundUser = users.find(u => u.name === this.name && u.password === this.password);
       if (foundUser) {
         this.userService.setUsername(foundUser.name);
-        this.router.navigate(['']);
+        this.router.navigate(['/home']);
       } else {
         this.errorMessage = 'The data entered are not correct, please check them.';
       }

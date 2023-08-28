@@ -1,8 +1,6 @@
 .container {
   width: 100%;
-  margin-left: 10vh;
-  margin-right:10vh ;
-  background-color: rgba(54, 65, 104, 0.8);
+ background-color: rgba(54, 65, 104, 0.8);
   opacity: 0.8;
   margin-top: 5vh;
   margin-bottom: 20vh;
@@ -13,6 +11,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 2vh;
 }
 
 .logo img {
@@ -115,15 +114,15 @@
 @media (max-width: 767px) {
   .col-md-8,
   .col-lg-6 {
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
   }
   
   .obligatory {
     position: relative;
 
     &::after {
-      right: 0;
+      right: 10%;
     }
   }
 }
