@@ -5,7 +5,8 @@ import { UserService } from '../../../services/user.service';
 
 interface User {
   id: number;
-  username: string;
+  name: string;
+  role: string;
   password: string;
 }
 
@@ -22,16 +23,14 @@ export class LoginregisterComponent {
   constructor(private router: Router, private http: HttpClient, private userService: UserService) {}
 
   login() {
-    this.http.get<User[]>('http://localhost:8000/users').subscribe((users: User[]) => {
-      const foundUser = users.find(u => u.username === this.name && u.password === this.password);
+    this.http.get<User[]>('http://localhost:8000/user').subscribe((users: User[]) => {
+      const foundUser = users.find(u => u.name === this.name && u.password === this.password);
       if (foundUser) {
-        this.userService.setUsername(foundUser.username);
-        this.router.navigate(['']);
+        this.userService.setUsername(foundUser.name);
+        this.router.navigate(['/home']);
       } else {
         this.errorMessage = 'The data entered are not correct, please check them.';
       }
     });
   }
 }
-
-
