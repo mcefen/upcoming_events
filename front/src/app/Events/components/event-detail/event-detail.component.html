@@ -1,7 +1,7 @@
 <div *ngFor="let event of events">
     <div class="container-global">
         <div class="container-up">
-            <img class="img-event-details" [src]="event.image" alt="{{ event.title }}">
+            <img [src]="'../../../../assets/images/' + event?.image" class="img-fluid mb-3">
         </div>
         <div class="container-aside">
             <p class="comentarios">{{ event.description }}</p>
