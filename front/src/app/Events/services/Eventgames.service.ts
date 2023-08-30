@@ -14,5 +14,10 @@ export class EventgamesService {
   createEventGame(eventGame: Eventgame): Observable<Eventgame> {
     return this.http.post<Eventgame>(`${this.baseUrl}/eventgames`, eventGame); 
   }
-
+  getEventGame(id: number): Observable<Eventgame> {
+    return this.http.get<any>(`${this.baseUrl}/eventgames/`+ id);
+  }
+  updateEventGame(id: number,eventgame: Eventgame): Observable<Eventgame> { 
+    return this.http.put<Eventgame>(`${this.baseUrl}/eventgames/`+ id, eventgame);
+  }
 }

@@ -87,7 +87,7 @@ export class CreateEventComponent implements OnInit {
       limitparticipants: this.limitparticipants,
       description: this.eventDescription,
       image: this.image ? this.image.name : '',
-      id_game: this.selectedGame as number,
+      id_game: this.selectedGame || 0,
       id_user: ''
     };
     
@@ -95,7 +95,7 @@ export class CreateEventComponent implements OnInit {
   
     this.eventGamesService.createEventGame(newEventGame).subscribe(
       (createdEventGame: Eventgame) => {
-        console.log('Event game created:', createdEventGame);
+     
       },
       (error) => {
         console.error('Error creating event game:', error);

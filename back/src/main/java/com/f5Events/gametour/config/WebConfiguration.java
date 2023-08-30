@@ -1,4 +1,4 @@
- package com.f5Events.gametour.config;
+/*  package com.f5Events.gametour.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -12,5 +12,5 @@ public class WebConfiguration implements WebMvcConfigurer{
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**");
     }
-}
+} */
 

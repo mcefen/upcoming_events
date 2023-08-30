@@ -2,12 +2,12 @@ import { User} from "./users.model"
 import { Game} from "./Games.model"
 export interface Eventgame{
     id_eventgame:Number,
-    description:String,
-    image:String,
+    description:string,
+    image:string,
     limitparticipants:Number,
     participants:Number,
-    publicationevent:String,
-    title:String,
+    publicationevent:string,
+    title:string,
     id_game:Number,
-    id_user:User| null | '';
+    id_user:User| null |undefined| '';
 }
