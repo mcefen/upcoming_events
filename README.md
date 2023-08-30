@@ -86,13 +86,13 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Maria Espartero** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Dulce Ulgar** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-* **Pablo Esteban** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-* **José Mª Blanco** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-* **Brian Acosta** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-* **Dulce Ulgar** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-* **Dulce Ulgar** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Maria Espartero** - *Backend-Frontend* - [villanuevand](https://github.com/villanuevand)
+* **Dulce Ulgar** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
+* **Pablo Esteban** - *Backend-Frontend* - [fulanitodetal](#fulanito-de-tal)
+* **José Mª Blanco** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
+* **Brian Acosta** - *Backend-Frontend* - [fulanitodetal](#fulanito-de-tal)
+* **Hafdalamehdi Sidi** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
+* **Antoni Vizcaíno** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
 
 
 
