@@ -1,3 +1,5 @@
+
+
 # Upcoming_Events
 
 _Upcoming_Events, gestiona las competiciones en linea de los videojuegos más conocidos.
@@ -58,7 +60,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Estas personas han contribuido al desarrollo de este proyecto WEB_
 
-* **Maria Espartero** - *Backend-Frontend* - [maesga1
+* **Maria Espartero** - *Backend-Frontend* - [maesga1)
 * **Dulce Ulgar** - *Frontend* - [DulceUlgar)
 * **Pablo Esteban** - *Backend-Frontend* - [PabloEsteban87)
 * **José Mª Blanco** - *Frontend* - [TxemaBlanco)
@@ -79,6 +81,9 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * Da las gracias públicamente 🤓.
 * Dona a una ONG`
 * etc.
+
+* ![Captura de pantalla 2023-08-01 a las 19 12 46](https://github.com/mcefen/upcoming_events/assets/25710748/7e1840cf-9745-41d2-816a-eae7eba7fc9d)
+
 
 
 
