@@ -30,49 +30,21 @@ _Esta web esta desarrollada con el framework de Angular_
 **Utilizando ademas + Spring Boot + MySQL**
 ```
 
-_Y repite_
-
 ```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Herramientas básicas del proyecto_
 
 * [Angular]([www.dropwizard.io/1.0.2/docs/](https://blog.angular.io/)) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [Spring Boot]((https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot))) 
-
+* [Maven]([https://maven.apache.org/]) - Manejador de dependencias
+* [Spring Boot]([https://spring.io/projects/spring-boot]) - Creación de Dependencias
+* [Spring Boot]([https://spring.io/projects/spring-boot]) - Creación de Dependencias
+* [MySQL]([(https://www.mysql.com/)]) - Creación de Dependencias
+  
 ## Contribuyendo 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com/) para detalles de nuestro código de conducta.
 
 ## Wiki 📖
 
@@ -84,7 +56,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+_Estas personas han contribuido al desarrollo de este proyecto WEB_
 
 * **Maria Espartero** - *Backend-Frontend* - [maesga1
 * **Dulce Ulgar** - *Frontend* - [DulceUlgar)
@@ -95,8 +67,6 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 * **Antoni Vizcaíno** - *Frontend* - [mcefen )
 
 
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
@@ -113,4 +83,4 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 
 ---
-⌨️ con ❤️ por [UNIQUE](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [UNIQUE]((https://github.com/F5-Events/upcoming_events)https://github.com/F5-Events/upcoming_events) 😊
