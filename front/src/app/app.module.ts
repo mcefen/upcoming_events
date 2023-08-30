@@ -15,6 +15,7 @@ import { SliderComponent } from './Events/components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { EventDetailComponent } from './events/components/event-detail/event-detail.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 
@@ -31,6 +32,7 @@ import { EventDetailComponent } from './events/components/event-detail/event-det
     CreateEventComponent,
     SliderComponent,
       EventDetailComponent,
+      HeaderComponent,
 
 
 
