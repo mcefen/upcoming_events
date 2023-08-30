@@ -66,9 +66,9 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [Angular]([www.dropwizard.io/1.0.2/docs/](https://blog.angular.io/)) - El framework web usado
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Spring Boot]((https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot))) 
 
 ## Contribuyendo 🖇️
 
@@ -86,13 +86,13 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Maria Espartero** - *Backend-Frontend* - [villanuevand](https://github.com/villanuevand)
-* **Dulce Ulgar** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
-* **Pablo Esteban** - *Backend-Frontend* - [fulanitodetal](#fulanito-de-tal)
-* **José Mª Blanco** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
-* **Brian Acosta** - *Backend-Frontend* - [fulanitodetal](#fulanito-de-tal)
-* **Hafdalamehdi Sidi** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
-* **Antoni Vizcaíno** - *Frontend* - [fulanitodetal](#fulanito-de-tal)
+* **Maria Espartero** - *Backend-Frontend* - [maesga1
+* **Dulce Ulgar** - *Frontend* - [DulceUlgar)
+* **Pablo Esteban** - *Backend-Frontend* - [PabloEsteban87)
+* **José Mª Blanco** - *Frontend* - [TxemaBlanco)
+* **Brian Acosta** - *Backend-Frontend* - [DevBrianAcostaBenítez)
+* **Hafdalamehdi Sidi** - *Frontend* - [hafdalamehdisidi)
+* **Antoni Vizcaíno** - *Frontend* - [mcefen )
 
 
 
@@ -104,13 +104,13 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
+* Proyecto del equipo de UNIQUE 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
+* Dona a una ONG`
 * etc.
 
 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [UNIQUE](https://github.com/Villanuevand) 😊
