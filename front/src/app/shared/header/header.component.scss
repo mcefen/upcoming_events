@@ -28,60 +28,75 @@ $secondary-color: #e74c3c;
     max-height: 100%;
   }
 
- .nav {
-   ul {
-     list-style: none;
-     display: flex;
-     margin: 0;
+  .nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
 
-     li {
-       margin-right: 20px;
+      li {
+        margin-right: 20px;
 
-       button {
-         border: 1px solid #000000;
-         border-radius: 35px;
-         color: black ;
-         cursor: pointer;
-         font-size: 16px;
-         width: 137px;
-         height: 75px;
-        font-weight: bold;
+        button {
+          border: 1px solid #000000;
+          border-radius: 35px;
+          color: black;
+          cursor: pointer;
+          font-size: 16px;
+          width: 137px;
+          height: 75px;
+          font-weight: bold;
 
-         &:hover {
-           text-decoration: underline;
-         }
-       }
-     }
-   }
- }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 
- .events {
-  border: 1px solid #000000;
-  border-radius: 35px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  width: 137px;
-  height: 75px;
-  background: #14E6F3;
-  box-shadow: #EFEFEF;
-  
- } 
-.login{
-  background-color: rgba(68, 243, 6, 1);
-}
-.crud{
-  background-color:rgba(217, 184, 184, 1);
-}
+  .events {
+    border: 1px solid #000000;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 137px;
+    height: 75px;
+    background: #14E6F3;
+    box-shadow: #EFEFEF;
+
+    &:hover {
+      background-color: darken(#14E6F3, 10%);
+    }
+  }
+
+  .login {
+    background-color: rgba(68, 243, 6, 1);
+
+    &:hover {
+      background-color: darken(rgba(68, 243, 6, 1), 10%);
+    }
+  }
+
+  .crud {
+    background-color: rgba(217, 184, 184, 1);
+
+    &:hover {
+      background-color: darken(rgba(217, 184, 184, 1), 10%);
+    }
+  }
+
   .hamburger-menu {
     display: none;
     cursor: pointer;
+    margin-top: 10px;
 
     .hamburger {
-      width: 30px;
-      height: 3px;
+      width: 20px;
+      height: 2px;
       background-color: white;
-      margin: 6px 0;
+      margin: 4px 0;
     }
   }
 
@@ -95,6 +110,7 @@ $secondary-color: #e74c3c;
       right: 0;
       width: 100%;
       padding: 20px;
+      transition: all 0.3s ease-in-out;
 
       &.active {
         display: flex;
@@ -105,7 +121,7 @@ $secondary-color: #e74c3c;
         flex-direction: column;
 
         .nav-item {
-          text-align: right;
+          text-align: center;
         }
       }
     }
@@ -115,3 +131,4 @@ $secondary-color: #e74c3c;
     }
   }
 }
+

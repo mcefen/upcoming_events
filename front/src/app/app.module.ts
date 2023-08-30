@@ -32,6 +32,8 @@ import { EditEventComponent } from './Events/components/edit-event/edit-event.co
     EditEventComponent,
     CreateEventComponent,
     SliderComponent,
+    HeaderComponent,
+    EventDetailComponent
 
   
   ],
