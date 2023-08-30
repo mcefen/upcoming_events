@@ -50,7 +50,6 @@ _Herramientas básicas del proyecto_
 * [Angular]([www.dropwizard.io/1.0.2/docs/](https://blog.angular.io/)) - El framework web usado
 * [Maven]([https://maven.apache.org/]) - Manejador de dependencias
 * [Spring Boot]([https://spring.io/projects/spring-boot]) - Creación de Dependencias
-* [Spring Boot]([https://spring.io/projects/spring-boot]) - Creación de Dependencias
 * [MySQL]([(https://www.mysql.com/)]) - Creación de Dependencias
   
 ## Contribuyendo 🖇️
