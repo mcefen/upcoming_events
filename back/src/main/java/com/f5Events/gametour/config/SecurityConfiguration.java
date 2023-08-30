@@ -9,6 +9,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -31,27 +32,28 @@ import com.f5Events.gametour.models.User1;
 @EnableWebSecurity
 public class SecurityConfiguration {
     
-       @Bean
-       SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-
-        http
-               .cors(withDefaults()) 
-                .csrf(csfr -> csfr.disable())
-                .formLogin(form -> form.disable())
-                .logout(out -> out
-                        .logoutUrl("/api/v1/logout")
-                        .deleteCookies("JSESSIONID"))
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.PUT).permitAll()
-                        .requestMatchers("/eventgames/**").permitAll()
-                        .requestMatchers("/games/**").permitAll()
-                        .requestMatchers("/user/**").permitAll())
-                 .httpBasic(withDefaults()) 
-                .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED));
-
-        return http.build();
-    }
+        @Bean
+        SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+ 
+         http
+                .cors(withDefaults()) 
+                 .csrf(csfr -> csfr.disable())
+                 .formLogin(form -> form.disable())
+                 .logout(out -> out
+                         .logoutUrl("/api/v1/logout")
+                         .deleteCookies("JSESSIONID"))
+                 .authorizeHttpRequests(auth -> auth
+                         .requestMatchers(HttpMethod.PUT).permitAll()
+                          .requestMatchers(HttpMethod.POST).permitAll()
+                         .requestMatchers("/eventgames/**").permitAll()
+                         .requestMatchers("/games/**").permitAll()
+                         .requestMatchers("/user/**").permitAll())
+                  .httpBasic(withDefaults()) 
+                 .sessionManagement(session -> session
+                         .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED));
+ 
+         return http.build();}
+         
     
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
