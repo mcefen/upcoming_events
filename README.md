@@ -82,7 +82,8 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 * Dona a una ONG`
 * etc.
 
-* ![Captura de pantalla 2023-08-01 a las 19 12 46](https://github.com/mcefen/upcoming_events/assets/25710748/7e1840cf-9745-41d2-816a-eae7eba7fc9d)
+* ![Captura de pantalla 2023-07-27 a las 16 01 10](https://github.com/mcefen/upcoming_events/assets/25710748/4e847a83-5c87-484d-a0c8-da5780fd4a52)
+
 
 
 
