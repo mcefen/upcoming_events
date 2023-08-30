@@ -1,0 +1,117 @@
+$primary-color: #1B2459;
+$secondary-color: #e74c3c;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $primary-color;
+  color: white;
+  width: 100%;
+
+  .logo-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px 0px #EFEFEF;
+  }
+
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+ .nav {
+   ul {
+     list-style: none;
+     display: flex;
+     margin: 0;
+
+     li {
+       margin-right: 20px;
+
+       button {
+         border: 1px solid #000000;
+         border-radius: 35px;
+         color: black ;
+         cursor: pointer;
+         font-size: 16px;
+         width: 137px;
+         height: 75px;
+        font-weight: bold;
+
+         &:hover {
+           text-decoration: underline;
+         }
+       }
+     }
+   }
+ }
+
+ .events {
+  border: 1px solid #000000;
+  border-radius: 35px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 137px;
+  height: 75px;
+  background: #14E6F3;
+  box-shadow: #EFEFEF;
+  
+ } 
+.login{
+  background-color: rgba(68, 243, 6, 1);
+}
+.crud{
+  background-color:rgba(217, 184, 184, 1);
+}
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+
+    .hamburger {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      background-color: $primary-color;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+
+      &.active {
+        display: flex;
+      }
+
+      .nav-list {
+        gap: 10px;
+        flex-direction: column;
+
+        .nav-item {
+          text-align: right;
+        }
+      }
+    }
+
+    .hamburger-menu {
+      display: block;
+    }
+  }
+}
