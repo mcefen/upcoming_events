@@ -1,0 +1,41 @@
+.banner {
+    display: grid;
+    justify-content: center;
+}
+
+.image-slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.188rem solid #000000;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.image-fade {
+    width: 8rem;
+    height: 5.5rem;
+    object-fit: fill;
+    border: 0.125rem solid #000000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.row {
+    justify-content: center;
+}
+
+.container-h1-1 {
+    width: 17rem;
+    height: 3rem;
+    margin-top: 5rem;
+    border-radius: 0.625rem;
+}
+
+.h1-1 {
+    text-shadow: -0.063rem -0.063rem 0.063rem #FFFFFF, 0.125rem 0.125rem  0.125rem  #FFFFFF, -0.063rem 0.063rem 0.063rem #FFFFFF, 0.063rem -0.063rem 0.063rem #FFFFFF;
+    vertical-align: center;
+    text-align: center;
+    font-family: 'Noto Serif', serif ;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}

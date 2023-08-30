@@ -11,7 +11,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
+import { SliderComponent } from './Events/components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { EditEventComponent } from './Events/components/edit-event/edit-event.component';
+
 
 
 @NgModule({
@@ -23,8 +27,10 @@ import { EditEventComponent } from './Events/components/edit-event/edit-event.co
     FooterComponent,
     PageregisterComponent,
     UpcomingEventsComponent,
-    CreateEventComponent,
     EditEventComponent,
+    CreateEventComponent,
+    SliderComponent,
+
   
   ],
   imports: [
@@ -32,7 +38,8 @@ import { EditEventComponent } from './Events/components/edit-event/edit-event.co
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-   
+    BrowserAnimationsModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
