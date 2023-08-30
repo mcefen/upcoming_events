@@ -1,20 +1,20 @@
 # Upcoming_Events
 
-_Upcoming_Events son competiciones en linea de los videojuegos más conocidos.
-Puedes tener acceso a los detalles de la partida, videojuego en competicion, fecha de la disputa, detalles
-de la contienda... Participar desde nuestra web, informacion exacta de participantes premios._
+_Upcoming_Events, gestiona las competiciones en linea de los videojuegos más conocidos.
+Puedes tener acceso a los más novedosos detalles de la partida, videojuego en competicion, fecha de la disputa,
+detalles de la contienda... Participar desde nuestra web, informacion exacta de participantes, premios._
 
 ## Comenzando 🚀
 
-_Para poder participar registra tus datos, cuando accedes a tu zona cliente ya tienes la posibilidad de apuntarte
+_Para poder participar tienes que registrar tus datos, cuando accedes a tu zona cliente ya tienes la posibilidad de apuntarte
 a los eventos proximos, **¡¡date prisa el cupo de participantes es limitado!!** ._
 
-Mira **Upcoming_Events** para conocer al detalle los Eventos.
+Mira **Upcoming_Events** para conocer al detalle todoslos Eventos.
 
 
 ### Pre-requisitos 📋
 
-_Para poder participar tienes que estar registrado y aceptar las normas de cada competicion
+_Para poder participar tienes que estar registrado y aceptar las normas de cada competicion.
 El numero de participantes es limitado (en esta web puedes seguir en tiempo real el número de participantes apuntados).
 Si estás interesad@ en participar debes de tenerlo en cuenta, no dejes pasar está oportunidad._
 
@@ -30,7 +30,7 @@ _Esta web esta desarrollada con el framework de Angular_
 **Utilizando ademas + Spring Boot + MySQL**
 ```
 
-```
+
 
 ## Construido con 🛠️
 
