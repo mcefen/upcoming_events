@@ -14,6 +14,7 @@ import { UpcomingEventsComponent } from '../app/Events/components/upcoming-event
 import { SliderComponent } from './Events/components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { EditEventComponent } from './Events/components/edit-event/edit-event.component';
 
 
 
@@ -26,12 +27,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     FooterComponent,
     PageregisterComponent,
     UpcomingEventsComponent,
-
+    EditEventComponent,
     CreateEventComponent,
-
     SliderComponent,
-
-
 
   
   ],

@@ -29,15 +29,15 @@ public class EventGamesService {
        return eventGames;
    }
 
-   public EventGames update(Long id, EventGames eventgames1, EventGames neweventgames){
-       eventgames1 = repository.findById(id).orElseThrow();
-       neweventgames.setTitle(eventgames1.getTitle());
-       neweventgames.setPublicationevent(eventgames1.getPublicationevent());
-       neweventgames.setParticipants(eventgames1.getParticipants());
-       neweventgames.setLimitparticipants(eventgames1.getLimitparticipants());
-       neweventgames.setDescription(eventgames1.getDescription());
-       neweventgames.setImage(eventgames1.getImage());
-       return repository.save(neweventgames);
+   public EventGames update(Long id, EventGames neweventgames){
+       EventGames currentEventGame = repository.findById(id).orElseThrow();
+       currentEventGame.setTitle(neweventgames.getTitle());
+       currentEventGame.setPublicationevent(neweventgames.getPublicationevent());
+       currentEventGame.setParticipants(neweventgames.getParticipants());
+       currentEventGame.setLimitparticipants(neweventgames.getLimitparticipants());
+       currentEventGame.setDescription(neweventgames.getDescription());
+       currentEventGame.setImage(neweventgames.getImage());
+       return repository.save(currentEventGame);
    }
    
    public EventGames delete(Long id, EventGames eventgames1){

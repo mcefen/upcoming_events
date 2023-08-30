@@ -8,6 +8,7 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -41,10 +42,10 @@ public class SecurityConfiguration {
                         .logoutUrl("/api/v1/logout")
                         .deleteCookies("JSESSIONID"))
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(HttpMethod.PUT).permitAll()
                         .requestMatchers("/eventgames/**").permitAll()
                         .requestMatchers("/games/**").permitAll()
-                        .requestMatchers("/user/**").permitAll()
-                        .anyRequest().authenticated())
+                        .requestMatchers("/user/**").permitAll())
                  .httpBasic(withDefaults()) 
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED));
@@ -67,14 +68,14 @@ public class SecurityConfiguration {
     public InMemoryUserDetailsManager userDetailsManager() {
         UserBuilder users = User.builder();
         UserDetails user = users
-                .username("Pablo")
-                .password("1234")
+                .username("pablo")
+                .password("555555")
                 .roles("USER")
                 .build();
 
         UserDetails admin = User.builder()
-                .username("admin")
-                .password("1234")
+                .username("brian")
+                .password("444444")
                 .roles("USER", "ADMIN")
                 .build();
 
