@@ -14,8 +14,7 @@
             <label class="mb-1 text-light px-3 text-center ">Game</label>
             <select class="form-control border border-success w-50" name="Game" [(ngModel)]="selectedGame" required>
                 <option *ngFor="let game of games" [value]="game.id_game">{{ game.name }}</option>
-            </select> 
-
+            </select>
         </div>
         
         <div class="form-group mb-1 d-flex flex-column align-items-center">

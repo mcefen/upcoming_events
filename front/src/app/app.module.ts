@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { EventDetailComponent } from './events/components/event-detail/event-detail.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { EditEventComponent } from './Events/components/edit-event/edit-event.component';
 
 
 
@@ -28,13 +29,9 @@ import { HeaderComponent } from './shared/header/header.component';
     FooterComponent,
     PageregisterComponent,
     UpcomingEventsComponent,
-
+    EditEventComponent,
     CreateEventComponent,
     SliderComponent,
-      EventDetailComponent,
-      HeaderComponent,
-
-
 
   
   ],
