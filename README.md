@@ -1,4 +1,8 @@
 
+* ![Logo](https://github.com/mcefen/upcoming_events/assets/25710748/6c863290-a1ba-4e03-9754-0457ef462f5f)
+
+
+
 
 # Upcoming_Events
 
@@ -30,7 +34,12 @@ _Esta web esta desarrollada con el framework de Angular_
 
 ```
 **Utilizando ademas + Spring Boot + MySQL**
+
 ```
+
+* ![fortnite-tournaments f5](https://github.com/mcefen/upcoming_events/assets/25710748/906625c5-33d5-4012-b79b-92b86317ce79)
+
+
 
 
 
