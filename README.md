@@ -1,30 +1,33 @@
-# upcoming_events
+# Upcoming_Events
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_Upcoming_Events son competiciones en linea de los videojuegos más conocidos.
+Puedes tener acceso a los detalles de la partida, videojuego en competicion, fecha de la disputa, detalles
+de la contienda... Participar desde nuestra web, informacion exacta de participantes premios._
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Para poder participar registra tus datos, cuando accedes a tu zona cliente ya tienes la posibilidad de apuntarte
+a los eventos proximos, **¡¡date prisa el cupo de participantes es limitado!!** ._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Mira **Upcoming_Events** para conocer al detalle los Eventos.
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Para poder participar tienes que estar registrado y aceptar las normas de cada competicion
+El numero de participantes es limitado (en esta web puedes seguir en tiempo real el número de participantes apuntados).
+Si estás interesad@ en participar debes de tenerlo en cuenta, no dejes pasar está oportunidad._
 
 ```
-Da un ejemplo
+Requisito Previo del cliente, estar registrado
 ```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+_Esta web esta desarrollada con el framework de Angular_
 
 ```
-Da un ejemplo
+**Utilizando ademas + Spring Boot + MySQL**
 ```
 
 _Y repite_
@@ -83,8 +86,15 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Maria Espartero** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Dulce Ulgar** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Pablo Esteban** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **José Mª Blanco** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Brian Acosta** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Dulce Ulgar** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Dulce Ulgar** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+
+
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
