@@ -6,34 +6,34 @@
 
 # Upcoming_Events
 
-_Upcoming_Events, gestiona las competiciones en linea de los videojuegos más conocidos.
-Puedes tener acceso a los más novedosos detalles de la partida, videojuego en competicion, fecha de la disputa,
-detalles de la contienda... Participar desde nuestra web, informacion exacta de participantes, premios._
+_Upcoming_Events, manages online competitions for the most popular video games.
+You can have access to the latest details of the game, video game in competition, date of the dispute,
+details of the contest... Participate from our website, exact information on participants, prizes._
 
-## Comenzando 🚀
+## Starting 🚀
 
-_Para poder participar tienes que registrar tus datos, cuando accedes a tu zona cliente ya tienes la posibilidad de apuntarte
-a los eventos proximos, **¡¡date prisa el cupo de participantes es limitado!!** ._
+_To be able to participate you have to register your data, when you access your client area you already have the possibility to sign up
+To upcoming events, **hurry, the number of participants is limited!!** ._
 
-Mira **Upcoming_Events** para conocer al detalle todoslos Eventos.
+Look at **Upcoming_Events** to see all the Events in detail.
 
 
-### Pre-requisitos 📋
+### Pre requirements📋
 
-_Para poder participar tienes que estar registrado y aceptar las normas de cada competicion.
-El numero de participantes es limitado (en esta web puedes seguir en tiempo real el número de participantes apuntados).
-Si estás interesad@ en participar debes de tenerlo en cuenta, no dejes pasar está oportunidad._
-
-```
-Requisito Previo del cliente, estar registrado
-```
-
-### Instalación 🔧
-
-_Esta web esta desarrollada con el framework de Angular_
+_To be able to participate you must be registered and accept the rules of each competition.
+The number of participants is limited (on this website you can follow the number of registered participants in real time).
+If you are interested in participating you should take it into account, do not miss this opportunity._
 
 ```
-**Utilizando ademas + Spring Boot + MySQL**
+_Prerequisite of the client, being registered._
+```
+
+### Facility 🔧
+
+_This website is developed with the Angular framework._
+
+```
+**Also using + Spring Boot + MySQL**
 
 ```
 
@@ -43,30 +43,31 @@ _Esta web esta desarrollada con el framework de Angular_
 
 
 
-## Construido con 🛠️
+## built with 🛠️
 
-_Herramientas básicas del proyecto_
+_Essential tools in the project_
 
-* [Angular]([www.dropwizard.io/1.0.2/docs/](https://blog.angular.io/)) - El framework web usado
-* [Maven]([https://maven.apache.org/]) - Manejador de dependencias
-* [Spring Boot]([https://spring.io/projects/spring-boot]) - Creación de Dependencias
-* [MySQL]([(https://www.mysql.com/)]) - Creación de Dependencias
-  
-## Contribuyendo 🖇️
+* [Angular]([www.dropwizard.io/1.0.2/docs/](https://blog.angular.io/)) - The web framework used.
+* [Maven]([https://maven.apache.org/]) - Dependency Manager
+* [MySQL]([(https://www.mysql.com/)]) - DB
+* [Visual Studio Code]([https://www.mysql.com/]) - Code editor.
+* [HTML & CSSS & Spring Boot]...
+      
+## Contributing 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/) para detalles de nuestro código de conducta.
+Please read [CONTRIBUTING.md](https://gist.github.com/) for details of our code of conduct.
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+You can find much more about how to use this project in our [Wiki](https://project/wiki).
 
-## Versionado 📌
+## Versioned 📌
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+We use [SemVer](http://semver.org/) for versioning. For all available versions, see the [tags in UNIQUE].
 
-## Autores ✒️
+## Authors ✒️
 
-_Estas personas han contribuido al desarrollo de este proyecto WEB_
+_These people have contributed to the development of this WEB project_
 
 * **Maria Espartero** - *Backend-Frontend* - [maesga1)
 * **Dulce Ulgar** - *Frontend* - [DulceUlgar)
@@ -78,16 +79,16 @@ _Estas personas han contribuido al desarrollo de este proyecto WEB_
 
 
 
-## Licencia 📄
+## License 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+This project is licensed under the License - see the file [LICENSE.md](LICENSE.md) for details.
 
-## Expresiones de Gratitud 🎁
+## Expressions of Gratitude🎁
 
-* Proyecto del equipo de UNIQUE 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona a una ONG`
+* UNIQUE team project 📢
+* Invite a beer 🍺 or a coffee ☕ someone on the team. 
+* Give thanks publicly 🤓.
+* Donate to an NGO
 * etc.
 
 * ![Captura de pantalla 2023-07-27 a las 16 01 10](https://github.com/mcefen/upcoming_events/assets/25710748/4e847a83-5c87-484d-a0c8-da5780fd4a52)
@@ -97,4 +98,4 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 
 
 ---
-⌨️ con ❤️ por [UNIQUE]((https://github.com/F5-Events/upcoming_events)https://github.com/F5-Events/upcoming_events) 😊
+⌨️ With ❤️ by [UNIQUE]((https://github.com/F5-Events/upcoming_events)) 😊
