@@ -7,7 +7,7 @@ import { EditEventComponent } from './Events/components/edit-event/edit-event.co
 import { CreateEventComponent } from './Events/components/create-event/create-event.component';
 import { PageregisterComponent } from './User/pageregister/pageregister.component';
 import { HomeComponent } from './Events/views/home/home.component';
-import { EventDetailComponent } from './events/components/event-detail/event-detail.component';
+import { EventDetailComponent } from './Events/components/event-detail/event-detail.component';
 
 const routes: Routes = [
   
