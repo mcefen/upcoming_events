@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+ background-color: rgba(54, 65, 104, 0.8);
+  opacity: 0.8;
+  margin-top: 5vh;
+  margin-bottom: 20vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 2vh;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  &.obligatory {
+    position: relative;
+
+    &::after {
+      content: "*";
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 0;
+      color: red;
+    }
+  }
+}
+
+.obligatoryinputs {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: red;
+  margin-top: -10%;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn-group-centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-group-centered .btn {
+  margin-right: 10px;
+}
+
+.obligatoryinputs {
+  text-align: center;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .col-md-8,
+  .col-lg-6 {
+    width: 50%;
+    max-width: 50%;
+  }
+  
+  .obligatory {
+    position: relative;
+
+    &::after {
+      right: 10%;
+    }
+  }
+}
+
+
+
+
+

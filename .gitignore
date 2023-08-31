@@ -1,7 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+**/.angular
 **/node_modules/
+**/.angular
 !/back
 !/front
+**/.angular
 # Compiled output
 /dist
 /tmp
@@ -12,6 +15,8 @@
 /node_modules
 npm-debug.log
 yarn-error.log
+/front/.angular
+
 
 # IDEs and editors
 .idea/

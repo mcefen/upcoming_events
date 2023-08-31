@@ -1,0 +1,63 @@
+.container-h1-1{
+    background-color: #44F306;
+    border: 0.188rem solid #000000;
+    outline: 0.188rem solid #44F306;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 22px 20px;
+    
+}
+
+
+.h1-1{
+    text-shadow: -0.063rem -0.063rem 0.063rem #ffffff, 0.125rem 0.125rem  0.125rem  #ffffff, -0.063rem 0.063rem 0.063rem #ffffff, 0.063rem -0.063rem 0.063rem #ffffff;
+    vertical-align: center;
+    text-align: center;
+    
+    padding: 0.5rem;
+    font-size: 2rem;
+
+}
+
+.container-slider{
+    height: 98px;
+     border-radius: 10px;
+     border: 2px solid #44F306;
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+    margin: 22px 20px;
+}
+
+.container-next-tournaments{
+    
+    margin-top: 22px;
+    flex: 1;
+    margin: 22px 20px;
+    margin-bottom: 30%;
+}
+
+.container-h1-2{
+    background-color: rgba(68, 243, 6, 1);
+    border: 0.188rem solid #000000;
+    outline: 0.188rem solid #EE7301;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.container-finished-tournaments{
+    margin-top: 22px;
+    flex: 1;
+    margin: 22px 20px;
+    margin-bottom: 30%;
+    
+}
+.container-flex {
+    display: flex;
+}
+

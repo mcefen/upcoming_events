@@ -1,0 +1,41 @@
+<div class="container-flex">
+  <div class="col-12 container-h1-2">
+    <h1 class="h1-2">End&nbsp;&nbsp;Tournaments</h1>
+  </div>
+
+  <div *ngFor="let event of pastEvents" class="past-event">
+    <div class="details-container">
+      <h3>{{ event.title }}</h3>
+      <p class="event-details">{{ event.idgame.name }}</p>
+    </div>
+    <div class="buttons-container">
+      <div class="date">{{ event.publicationevent | date:'medium' }}</div>
+      <div class="button-container">
+        <button class="button info-button">Info</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-12">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" (click)="goToPreviousPage()" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item" *ngFor="let page of totalPages">
+            <a class="page-link" (click)="goToPage(page)">{{ page }}</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" (click)="goToNextPage()" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div *ngFor="let event of events">
+    <div class="container-global">
+        <div class="container-up">
+            <img [src]="'../../../../assets/images/' + event?.image" class="img-fluid mb-3">
+        </div>
+        <div class="container-aside">
+            <p class="comentarios">{{ event.description }}</p>
+        </div>
+        <div class="container-down">
+            <div class="eventdetails-title">
+                <input class="Event-title" type="text" name="" [value]="event.title">
+            </div>
+            <div class="eventdetails-date">
+                <input class="event-date" type="text" name="" [value]="event.publicationevent" readonly>
+            </div>
+            <div class="eventdetails-participants">
+                <input class="participans" type="text" name="" [value]="event.limitparticipants" readonly>
+            </div>
+        </div>
+    </div>
+</div>
