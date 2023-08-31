@@ -8,8 +8,8 @@ import { CreateEventComponent } from './Events/components/create-event/create-ev
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './Events/views/home/home.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { LoginregisterComponent } from './Events/components/loginregister/loginregister.component';
-import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
+import { LoginregisterComponent } from './User/loginregister/loginregister.component';
+import { PageregisterComponent } from './User/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
