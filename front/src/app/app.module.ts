@@ -14,7 +14,7 @@ import { UpcomingEventsComponent } from '../app/Events/components/upcoming-event
 import { SliderComponent } from './Events/components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { EventDetailComponent } from './events/components/event-detail/event-detail.component';
+import { EventDetailComponent } from './Events/components/event-detail/event-detail.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { EditEventComponent } from './Events/components/edit-event/edit-event.component';
 
